@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_course"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="5dp"
+        app:cardMaxElevation="10dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textview_course_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Courseid"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textview_course_teacher_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Teacherid"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/editText_course_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CourseName"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/editText_course_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CourseStatus"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/editText_class_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ClassNumber"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/button_edit_course_reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reset" />
+
+            <Button
+                android:id="@+id/button_edit_course_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

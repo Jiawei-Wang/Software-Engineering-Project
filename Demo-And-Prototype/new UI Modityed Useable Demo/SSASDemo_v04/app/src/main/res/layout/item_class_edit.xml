@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_class_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="5dp"
+        app:cardMaxElevation="10dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+            <LinearLayout
+                android:id="@+id/LinearLayout_class_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="37dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/textview_class_classid_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Class ID: "
+                     />
+                <TextView
+                    android:id="@+id/textview_class_course_name_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Course Name:"
+                     />
+                <TextView
+                    android:id="@+id/textview_class_course_id_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Course ID:"
+                     />
+                <TextView
+                    android:id="@+id/textview_class_datetime_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Data:"
+                     />
+                <TextView
+                    android:id="@+id/textview_class_classroom_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:text="Class Room:"
+                     />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/LinearLayout_class_1"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textview_class_classid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CourseName"
+                     />
+
+                <TextView
+                    android:id="@+id/textview_class_course_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CourseName"
+                    />
+
+                <TextView
+                    android:id="@+id/textview_class_course_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CourseName"
+                     />
+
+                <EditText
+                    android:id="@+id/editText_class_datetime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DateTime"
+                    android:singleLine="true"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp" />
+
+                <EditText
+                    android:id="@+id/editText_class_classroom"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:layout_height="wrap_content"
+                    android:text="Classroom"
+                     />
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/button_edit_class_reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/LinearLayout_class_1"
+                android:layout_marginTop="10dp"
+                android:minHeight="0dp"
+                android:text="Reset" />
+
+            <Button
+                android:id="@+id/button_edit_class_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/LinearLayout_class_1"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/button_edit_class_reset"
+
+                android:minHeight="0dp"
+                android:text="Save" />
+
+            <Button
+                android:id="@+id/button_delete_class"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/LinearLayout_class_1"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/button_edit_class_save"
+
+                android:minHeight="0dp"
+                android:text="Delete" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

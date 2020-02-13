@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name='SSAS-Demo-v0.4'

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_course"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="5dp"
+        app:cardMaxElevation="10dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/textview_id_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Courseid: "
+                ></TextView>
+
+            <TextView
+                android:id="@+id/textview_course_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/textview_id_tag"
+                android:text="Courseid"
+                />
+            <TextView
+                android:id="@+id/textview_teacher_id_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Teacherid: "
+                android:layout_below="@+id/textview_id_tag"></TextView>
+
+            <TextView
+                android:id="@+id/textview_course_teacher_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/textview_teacher_id_tag"
+                android:layout_below="@+id/textview_course_id"
+                android:text="Teacherid"
+                />
+            <TextView
+                android:id="@+id/textview_course_name_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CourseName: "
+                android:layout_below="@+id/textview_teacher_id_tag"></TextView>
+
+            <TextView
+                android:id="@+id/textview_course_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/textview_course_name_tag"
+                android:layout_below="@+id/textview_course_teacher_id"
+                android:text="CourseName"
+                />
+            <TextView
+                android:id="@+id/textview_course_status_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CourseStatus: "
+                android:layout_below="@+id/textview_course_name_tag"></TextView>
+
+            <TextView
+                android:id="@+id/textview_course_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview_course_name"
+                android:layout_toRightOf="@+id/textview_course_status_tag"
+                android:text="CourseStatus"
+                />
+
+            <TextView
+                android:id="@+id/textview_class_number_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ClassNumber: "
+                android:layout_below="@+id/textview_course_status_tag"></TextView>
+
+            <TextView
+                android:id="@+id/textview_class_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/textview_class_number_tag"
+                android:layout_below="@+id/textview_course_status"
+                android:text="ClassNumber"
+                />
+
+            <Button
+                android:id="@+id/button_edit_course"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview_class_number_tag"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:text=">Edit Info" />
+
+            <Button
+                android:id="@+id/button_view_course"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/button_edit_course"
+                android:layout_below="@+id/textview_class_number"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:text=">View Class" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

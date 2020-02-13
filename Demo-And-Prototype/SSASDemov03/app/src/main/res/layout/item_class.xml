@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_class"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="5dp"
+        app:cardMaxElevation="10dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textview_class_course_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CourseName"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textview_class_datetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DateTime"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textview_class_classroom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Classroom"
+                android:textSize="30sp" />
+
+
+            <Button
+                android:id="@+id/button_to_view_class"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=">View Info" />
+
+            <Button
+                android:id="@+id/button_to_edit_attendance_for_class"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=">Edit Info" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

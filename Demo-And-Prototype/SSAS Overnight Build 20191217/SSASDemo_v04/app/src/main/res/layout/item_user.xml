@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="5dp"
+        app:cardMaxElevation="10dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imageView_userpic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="20dp">
+                <TextView
+                    android:id="@+id/textview_user_status_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="user status: "
+                    />
+
+                <TextView
+                    android:id="@+id/textview_user_username_tag"
+                    android:layout_below="@+id/textview_user_status_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="user name: " />
+                <TextView
+                    android:id="@+id/textView_user_userid_tag"
+                    android:layout_below="@+id/textview_user_username_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="user id: " />
+
+                <TextView
+                    android:id="@+id/textView_user_email_tag"
+                    android:layout_below="@+id/textView_user_userid_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="email: " />
+
+                <TextView
+                    android:id="@+id/textView_user_class_giving_tag"
+                    android:layout_below="@+id/textView_user_email_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="user class: " />
+
+                <TextView
+                    android:id="@+id/textView_user_datecreated_tag"
+                    android:layout_below="@+id/textView_user_class_giving_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="date created; " />
+                <TextView
+                    android:id="@+id/textView_user_status"
+                    android:layout_toRightOf="@+id/textview_user_status_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="eeeeeeee" />
+
+                <TextView
+                    android:id="@+id/textView_user_username"
+                    android:layout_toRightOf="@+id/textview_user_username_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView_user_status"
+                    android:text="TextView" />
+
+
+
+                <TextView
+                    android:id="@+id/textView_user_userid"
+                    android:layout_below="@+id/textView_user_username"
+                    android:layout_toRightOf="@+id/textView_user_userid_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/textView_user_email"
+                    android:layout_below="@+id/textView_user_userid"
+                    android:layout_toRightOf="@+id/textView_user_email_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/textView_user_class_giving"
+                    android:layout_below="@+id/textView_user_email"
+                    android:layout_toRightOf="@+id/textView_user_class_giving_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/textView_user_datecreated"
+                    android:layout_below="@+id/textView_user_class_giving"
+                    android:layout_toRightOf="@+id/textView_user_datecreated_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="TextView" />
+
+                <Button
+                    android:id="@+id/button_edit_user"
+                    android:layout_below="@+id/textView_user_datecreated"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=">Edit Info" />
+                <Button
+
+                    android:id="@+id/button_view_user"
+                    android:layout_toRightOf="@id/button_edit_user"
+                    android:layout_below="@+id/textView_user_datecreated"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=">View Info" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

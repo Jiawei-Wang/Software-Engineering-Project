@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="50dp"
+    android:gravity="center"
+    tools:context=".RegisterActivity">
+
+
+
+    <EditText
+        android:id="@+id/editText_username_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UserName"
+        android:gravity="center"
+        android:singleLine="true"
+        />
+
+    <EditText
+        android:id="@+id/editText_password_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_username_register"
+        android:text=""
+        android:singleLine="true"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/editText_password_register_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:singleLine="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/editText_password_register"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/editText_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:singleLine="true"
+        android:text="\Email Address"
+        android:gravity="center"
+        android:layout_below="@+id/editText_password_register_confirm"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/textView_register_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_email"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical"
+        android:text="Please Register"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_register_result"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:text="Register"
+        android:layout_marginTop="30dp" />
+
+
+
+
+
+</RelativeLayout>

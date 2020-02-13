@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_course"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="5dp"
+        app:cardMaxElevation="10dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+            <RelativeLayout
+                android:id="@+id/relativeLayout_student_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <LinearLayout
+                    android:id="@+id/item_student_edit_linearlayout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textview_student_pic_tag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="StudentPic: "
+                        android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/textview_student_id_tag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ID: "
+                        android:layout_marginTop="16dp"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/editText_student_name_tag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name: "
+                        android:layout_marginTop="16dp"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/editText_student_email_tag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email: "
+                        android:layout_marginTop="16dp"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/editText_student_status_tag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Status: "
+                        android:layout_marginTop="16dp"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_toEndOf="@+id/item_student_edit_linearlayout1">
+                    <TextView
+                        android:id="@+id/textview_student_pic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="StudentPic"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/textview_student_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Studentid"
+                        android:layout_marginTop="16dp"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/editText_student_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="StudentName"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/editText_student_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="StudentEmail"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/editText_student_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="StudentStatus"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+            <Button
+                android:id="@+id/button_edit_student_reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout_student_info"
+                android:layout_marginLeft="70dp"
+                android:minHeight="0dp"
+                android:text="Reset" />
+
+            <Button
+                android:id="@+id/button_edit_student_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout_student_info"
+                android:layout_toEndOf="@+id/button_edit_student_reset"
+                android:minHeight="0dp"
+                android:text="Save" />
+
+            <Button
+                android:id="@+id/button_delete_student"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout_student_info"
+                android:layout_toEndOf="@+id/button_edit_student_save"
+                android:minHeight="0dp"
+                android:text="Delete" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
